@@ -26,15 +26,15 @@ public class MemberRepository {
         return member;
     }
 
-    public Member findById(Long id){
+    public Member findById(Long id) {
         return store.get(id);
     }
 
-    public List<Member> findAll(){
+    public List<Member> findAll() {
         return new ArrayList<>(store.values());
     }
 
-    public void clearStore(){
+    public void clearStore() {
         store.clear();
     }
 }
